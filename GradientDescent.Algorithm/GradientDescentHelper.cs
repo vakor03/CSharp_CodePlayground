@@ -2,24 +2,6 @@
 
 public static class GradientDescentHelper
 {
-    public static GradientDescentInput GenerateGradientDescentInput(int trainingDataCount, int maxIterations)
-    {
-        maxIterations = 100;
-        double[] modelParameters = new double[1];
-        double[][] trainingData = new double[trainingDataCount][];
-        double[] targets = new double[trainingDataCount];
-        double learningRate = 0.1;
-        double Func(double x) => x * 2;
-        for (int i = 0; i < trainingDataCount; i++)
-        {
-            trainingData[i] = new double[1];
-            trainingData[i][0] = Random.Shared.NextDouble() * 1000;
-            targets[i] = Func(trainingData[i][0]);
-        }
-
-        return new GradientDescentInput(modelParameters, trainingData, targets, learningRate, maxIterations);
-    }
-
     public static Func<double[], double> GenerateInitialFunc(int argumentsCount)
     {
         return x =>
@@ -37,7 +19,7 @@ public static class GradientDescentHelper
             return result;
         };
     }
-    
+
     public static double[] GenerateInitialPoint(int argumentsCount, double value)
     {
         double[] initialPoint = new double[argumentsCount];
@@ -48,5 +30,4 @@ public static class GradientDescentHelper
 
         return initialPoint;
     }
-   
 }
