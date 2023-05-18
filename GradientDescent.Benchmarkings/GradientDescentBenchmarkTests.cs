@@ -12,6 +12,7 @@ public class GradientDescentBenchmarkTests
     private Func<double[], double> _initialFunc;
 
     private Algorithm.GradientDescent _gradientDescent;
+    private GradientDescentParallel _gradientDescentParallel;
     private double[] _initialPoint;
     private double _learningRate;
     private int _iterationsCount;
@@ -23,13 +24,13 @@ public class GradientDescentBenchmarkTests
             _initialPoint, 0.0001);
     }
 
-    // [Benchmark]
-    // public void PerformParallelGradientDescent()
-    // {
-    //     
-    //     double[] finalModelParameters = _gradientDescentParallel.PerformParallelGradientDescent(_modelParameters,
-    //         _trainingData, _targets, _learningRate, _maxIterations);
-    // }
+    [Benchmark]
+    public void PerformParallelGradientDescent()
+    {
+        
+        double[] funcMinima = _gradientDescentParallel.FindFuncMinima(_initialFunc, _learningRate, _iterationsCount,
+            _initialPoint, 0.0001);
+    }
     
     [GlobalSetup]
     public void Setup()
@@ -37,6 +38,7 @@ public class GradientDescentBenchmarkTests
         _initialFunc = GradientDescentHelper.GenerateInitialFunc(ArgumentsCount);
         _initialPoint = GradientDescentHelper.GenerateInitialPoint(ArgumentsCount, 1000);
         _gradientDescent = new Algorithm.GradientDescent();
+        _gradientDescentParallel = new GradientDescentParallel();
         _learningRate = 0.0001;
         _iterationsCount = 1000;
     }
