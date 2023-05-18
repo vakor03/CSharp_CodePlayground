@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\GradientDescent.Algorithm\GradientDescent.Algorithm.csproj" />
+      <ProjectReference Include="..\CodePlayground.GradientDescent.Algorithm\CodePlayground.GradientDescent.Algorithm.csproj" />
     </ItemGroup>
 
 </Project>

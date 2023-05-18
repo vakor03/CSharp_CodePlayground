@@ -1,4 +1,4 @@
-﻿namespace GradientDescent.Algorithm;
+﻿namespace CodePlayground.GradientDescent.Algorithm;
 
 public static class GradientDescentHelper
 {

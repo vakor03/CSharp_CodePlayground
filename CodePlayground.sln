@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseConsoleApp", "BaseConsoleApp\BaseConsoleApp.csproj", "{0F6C2B15-DD3C-42F9-A912-29099DCC5381}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePlayground.BaseConsoleApp", "CodePlayground.BaseConsoleApp\CodePlayground.BaseConsoleApp.csproj", "{0F6C2B15-DD3C-42F9-A912-29099DCC5381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientDescent.Algorithm", "GradientDescent.Algorithm\GradientDescent.Algorithm.csproj", "{18A24133-28CC-4E70-8ECE-2863D8AA7D00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePlayground.GradientDescent.Algorithm", "CodePlayground.GradientDescent.Algorithm\CodePlayground.GradientDescent.Algorithm.csproj", "{18A24133-28CC-4E70-8ECE-2863D8AA7D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientDescent.Benchmarkings", "GradientDescent.Benchmarkings\GradientDescent.Benchmarkings.csproj", "{A9FD4AA7-E4ED-4A7A-B280-C28929B3046B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodePlayground.GradientDescent.Benchmark", "CodePlayground.GradientDescent.Benchmark\CodePlayground.GradientDescent.Benchmark.csproj", "{A9FD4AA7-E4ED-4A7A-B280-C28929B3046B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,23 +1,22 @@
 ﻿using MathNet.Numerics;
 
-namespace GradientDescent.Algorithm;
+namespace CodePlayground.GradientDescent.Algorithm;
 
 public class GradientDescent
 {
     public double[] FindFuncMinima(Func<double[], double> initialFunc, double learningRate, int maxIterations,
         double[] startPointArray, double tolerance)
     {
-        Vector startPoint = new Vector(startPointArray);
-        Vector funcMinima = new Vector(startPoint.Length);
+        Vector funcMinima = new Vector(startPointArray);
 
         for (int i = 0; i < maxIterations; i++)
         {
             var gradient = CalculateGradientInPoint(initialFunc, funcMinima);
             var difference = learningRate * gradient;
-            // if (difference.Norm <= tolerance)
-            // {
-            //     break;
-            // }
+            if (difference.Norm <= tolerance)
+            {
+                break;
+            }
 
             funcMinima -= difference;
         }

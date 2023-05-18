@@ -1,13 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>CodePlayground.BaseConsoleApp</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+      <ProjectReference Include="..\CodePlayground.GradientDescent.Algorithm\CodePlayground.GradientDescent.Algorithm.csproj" />
     </ItemGroup>
 
 </Project>

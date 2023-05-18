@@ -1,5 +1,4 @@
-﻿namespace GradientDescent.Algorithm;
-
+﻿namespace CodePlayground.GradientDescent.Algorithm;
 internal readonly struct Vector
 {
     private readonly double[] _vector;

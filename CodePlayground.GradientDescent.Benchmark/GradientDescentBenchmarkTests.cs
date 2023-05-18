@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
-using GradientDescent.Algorithm;
+using CodePlayground.GradientDescent.Algorithm;
 
-namespace GradientDescent.Benchmarkings;
+namespace CodePlayground.GradientDescent.Benchmark;
 
 [MemoryDiagnoser()]
 public class GradientDescentBenchmarkTests
