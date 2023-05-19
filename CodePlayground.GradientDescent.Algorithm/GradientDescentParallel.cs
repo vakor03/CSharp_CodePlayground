@@ -2,10 +2,10 @@
 
 namespace CodePlayground.GradientDescent.Algorithm;
 
-public class GradientDescentParallel
+public class GradientDescentParallel : IGradientDescentAlgorithm
 {
-    public double[] FindFuncMinima(Func<double[], double> initialFunc, double learningRate, int maxIterations,
-        double[] startPointArray, double tolerance)
+    public double[] FindFuncMinima(Func<double[], double> initialFunc, double[] startPointArray, double learningRate,
+        int maxIterations, double tolerance)
     {
         Vector funcMinima = new Vector(startPointArray);
 

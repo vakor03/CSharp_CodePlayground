@@ -10,10 +10,10 @@ public static class GradientDescentHelper
             for (int i = 0; i < argumentsCount; i++)
             {
                 result += Math.Pow(x[i], 2);
-                for (int j = i + 1; j < argumentsCount; j++)
-                {
-                    result += x[i] * x[j];
-                }
+                // for (int j = i + 1; j < argumentsCount; j++)
+                // {
+                //     result += x[i] * x[j];
+                // }
             }
 
             return result;
